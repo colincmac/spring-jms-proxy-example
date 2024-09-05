@@ -1,0 +1,20 @@
+spring:
+  main:
+    web-application-type: "none"
+    banner-mode: "off"
+  application:
+    name: servicebus
+  jms:
+    servicebus:
+      passwordless-enabled: true
+      pricing-tier: standard
+      namespace: cmccullough
+      topic-client-id: 00000000-0000-0000-0000-000000000000
+  # Uncomment to enable a proxy on all Azure SDK clients
+  # cloud:
+  #   azure:
+  #     proxy:
+  #       host: localhost
+  #       port: 8888
+  #       nonProxyHosts: localhost
+  #       enabled: true
